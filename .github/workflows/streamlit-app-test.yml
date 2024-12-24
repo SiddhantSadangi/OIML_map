@@ -22,7 +22,7 @@ jobs:
         python-version: "3.12"  # Setup Python 3.12
     - uses: streamlit/streamlit-app-action@v0.0.3  # Use the Streamlit App Action
       with:  
-        app-path: login.py  # Path to the Streamlit app
+        app-path: app.py  # Path to the Streamlit app
 ### Optional steps to display the test results
         pytest-args: -v --junit-xml=test-results.xml  # Run pytest with verbose output and save the results in test-results.xml
     - if: always()  # Always run the following steps
